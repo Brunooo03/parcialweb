@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+  }
+  
+  /* Estilo general para todos los marcos */
+  .frame {
+    padding: 10px;
+    border: 3px solid #0288d1; /* Borde celeste fuerte */
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    margin: 5px;
+  }
+  
+  /* Marco superior (frame A) */
+  .frame-a {
+    background-color: #b3e5fc;
+    text-align: center;
+  }
+  
+  /* Marco izquierdo (frame B) */
+  .frame-b {
+    width: 30%;
+    background-color: #e1f5fe;
+  }
+  
+  /* Marco derecho (frame C) */
+  .frame-c {
+    width: 70%;
+    background-color: #e0f2f1;
+    overflow: auto;
+  }
+  
+  /* Marco inferior (frame D) */
+  .frame-d {
+    height: 200px;
+    background-color: #b2ebf2;
+  }
+  
+  /* Contenedor de marcos intermedios B y C */
+  .content {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Imagen de perfil */
+  .foto {
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #4fc3f7;
+    border-radius: 50%;
+  }
+  
+  /* Estilos para la tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #81d4fa;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4dd0e1;
+    color: white;
+  }
+  
+  a {
+    color: #0277bd;
+    text-decoration: none;
+  }
+  
+  .facebook-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1976D2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .facebook-link:hover {
+    background-color: #1565C0;
+  }
+  

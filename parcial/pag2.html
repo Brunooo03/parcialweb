@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Bruno</title>
+  <style>
+    /* Reset y tipografía */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
+      color: #004d40;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #006064;
+      margin-bottom: 10px;
+    }
+    /* Contenedor principal */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border: 2px solid #4dd0e1;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    /* Secciones */
+    section {
+      margin-bottom: 20px;
+    }
+    section:last-child {
+      margin-bottom: 0;
+    }
+    /* Lista de habilidades */
+    .skills ul {
+      list-style: none;
+    }
+    .skills li {
+      margin-bottom: 8px;
+      padding-left: 16px;
+      position: relative;
+    }
+    .skills li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #00796b;
+    }
+    /* Tarjetas de proyectos */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .project-card {
+      background-color: #e1f5fe;
+      border: 1px solid #81d4fa;
+      border-radius: 6px;
+      padding: 12px;
+    }
+    .project-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: #01579b;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+    }
+    /* Enlace de retorno */
+    .back-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #4dd0e1;
+      color: #004d40;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      background-color: #26c6da;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formato Interno</h1>
+    <p>Bienvenido a la página interna de Bruno Zurita Pérez. Aquí encontrarás un resumen de mi perfil profesional y algunos proyectos destacados.</p>
+    
+    <section class="summary">
+      <h2>Resumen Profesional</h2>
+      <p>Estudiante de Ingeniería en Sistemas con experiencia básica en desarrollo web (HTML, CSS, JavaScript) y programación en C#, Java y Python. Actualmente laboro en Papa John’s, complementando mi formación técnica con habilidades prácticas en atención al cliente y trabajo en equipo.</p>
+    </section>
+    
+    <section class="skills">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML5 y CSS3 (Intermedio)</li>
+        <li>JavaScript básico (DOM, fetch API)</li>
+        <li>C# y .NET (Fundamentos)</li>
+        <li>Java y Python (Conceptos básicos)</li>
+        <li>Inglés intermedio</li>
+      </ul>
+    </section>
+    
+    <section class="projects">
+      <h2>Proyectos Destacados</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Calculadora Gauss-Jordan</h3>
+          <p>Aplicación web que resuelve sistemas de ecuaciones 3x3 y 4x4 usando el método de Gauss-Jordan. Incluye validación de entradas y presentación de pasos intermedios.</p>
+        </div>
+        <div class="project-card">
+          <h3>Sitio Corporativo Papa John's</h3>
+          <p>Integración de un iframe que muestra el sitio oficial de Papa John’s dentro de un diseño personalizado, usando CSS flexbox y grid.</p>
+        </div>
+        <div class="project-card">
+          <h3>Portafolio Dinámico</h3>
+          <p>Página web de portafolio con diseño adaptable (responsive) y efectos CSS, ideal para mostrar proyectos y contacto.</p>
+        </div>
+      </div>
+    </section>
+    
+    <a href="index.html" class="back-link">← Volver al sitio principal</a>
+  </div>
+</body>
+</html>
